@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>EasyPython</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="bg">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light scroling-navbar">
+            <div class="container-fluid">
+                <a href="home.html" class="logo-wrapper waves-effect ep-size-logo">
+                    <img src="/img/svg/logo.svg" alt="python" class="container">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Togglenavigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ep-collapse-menu" id="navbarContent">
+                    <form class="form-inline mr-auto ml-auto justify-content-center ep-pb-10" method="post" enctype="multipart/form-data">
+                        <input class="form-control mr-sm-2 mb-2 mt-2" type="text" placeholder="Search" aria-label="Search">
+                        <button class="btn aqua-gradient btn-rounded btn-sm my-0 mb-2 mt-2" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                    <div class="btn-group">
+                        <button class="btn aqua-gradient btn-rounded ep-lk-size" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far fa-user-circle fa-2x text-center">
+                                <strong class="ml-2 ep-login">Str3et</strong></i>
+                        </button>
+                        <div class="dropdown-menu text-center ep-drop-menu-login" aria-labelledby="dropdownMenu">
+                            <a class="dropdown-item" href="#">Личный кабинет</a>
+                            <a class="dropdown-item" href="reg.html">Регистрация</a>
+                            <a class="dropdown-item" href="admin.html">Администрация</a>
+                        </div>
+                    </div>
+                    <div class="ep-nav container-fluid mt-3">
+                        <div class="list-group list-group-flush">
+                            <a href="admin.html" class="ep-group-item list-group-item waves-effect text-center">
+                                <i class="fas fa-home fa-2x"></i><br>Dashboard
+                            </a>
+                            <a href="news_management.html" class="ep-group-item list-group-item waves-effect active text-center">
+                                <i class="far fa-newspaper fa-2x"></i><br>Управление новостями
+                            </a>
+                            <a href="vote_management.html" class="ep-group-item list-group-item waves-effect text-center">
+                                <i class="fas fa-poll fa-2x"></i><br>Управление опросами
+                            </a>
+                            <a href="event_management.html" class="ep-group-item list-group-item waves-effect text-center">
+                                <i class="far fa-calendar-alt fa-2x"></i><br>Управление событиями
+                            </a>
+                            <a href="contact_management.html" class="ep-group-item list-group-item waves-effect text-center">
+                                <i class="fab fa-rocketchat fa-2x"></i><br>Управление обратной связью
+                            </a>
+                            <a href="user_management.html" class="ep-group-item list-group-item waves-effect text-center">
+                                <i class="fas fa-users-cog fa-2x"></i><br>Управление user`ами
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <aside class="sidebar-fixed position-fixed">
+        <div class="list-group list-group-flush ep-sidebar-text mb-5">
+            <a href="admin.html" class="ep-group-item list-group-item waves-effect text-center">
+                <i class="fas fa-home fa-2x"></i><br>Dashboard
+            </a>
+            <a href="news_management.html" class="ep-group-item list-group-item waves-effect active text-center">
+                <i class="far fa-newspaper fa-2x"></i><br>Управление новостями
+            </a>
+            <a href="vote_management.html" class="ep-group-item list-group-item waves-effect text-center">
+                <i class="fas fa-poll fa-2x"></i><br>Управление опросами
+            </a>
+            <a href="event_management.html" class="ep-group-item list-group-item waves-effect text-center">
+                <i class="far fa-calendar-alt fa-2x"></i><br>Управление событиями
+            </a>
+            <a href="contact_management.html" class="ep-group-item list-group-item waves-effect text-center">
+                <i class="fab fa-rocketchat fa-2x"></i><br>Управление обратной связью
+            </a>
+            <a href="user_management.html" class="ep-group-item list-group-item waves-effect text-center">
+                <i class="fas fa-users-cog fa-2x"></i><br>Управление user`ами
+            </a>
+        </div>
+    </aside>
+    <main class="max-lg-5 flex-grow-1 my-p-side-bar">
+        <div class="d-flex justify-content-around flex-wrap mt-4 mb-4">
+
+            <!-- Editable table -->
+            <div class="card mr-2">
+                <h3 class="card-header text-center font-weight-bold text-uppercase py-4">Новости</h3>
+                <div class="card-body">
+                    <div id="table" class="table-editable">
+                        <span class="table-add float-right mb-3 mr-2"><a href="#!" class="text-success"><i class="fas fa-plus fa-2x" aria-hidden="true"></i></a></span>
+                        <table class="table table-bordered table-responsive-md table-striped text-center">
+                            <tr>
+                                <th class="text-center">Новость</th>
+                                <th class="text-center">Текст новости</th>
+                                <th class="text-center">Тэги</th>
+                                <th class="text-center">Ресурс</th>
+                                <th class="text-center">Ссылка</th>
+                                <th class="text-center">Дата</th>
+                                <th class="text-center">Sort</th>
+                                <th class="text-center">Remove</th>
+                            </tr>
+                            <tr>
+                                <td class="pt-3-half" contenteditable="true">Открытие</td>
+                                <td class="pt-3-half" contenteditable="true">Мы открылись Мы открылись Мы открылись Мы открылись Мы открылись Мы открылись  Мы открылись Мы открылись Мы открылись Мы открылись Мы открылись Мы открылись мМы открылись</td>
+                                <td class="pt-3-half" contenteditable="true">открытие начало</td>
+                                <td class="pt-3-half" contenteditable="true">точка.ру</td>
+                                <td class="pt-3-half" contenteditable="true">ввв.амам.ру</td>
+                                <td class="pt-3-half" contenteditable="true">01.01.2019</td>
+                                <td class="pt-3-half">
+                                    <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a></span>
+                                    <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down" aria-hidden="true"></i></a></span>
+                                </td>
+                                <td>
+                                    <span class="table-remove"><button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                                </td>
+                            </tr>
+                            <!-- This is our clonable table line -->
+                            <tr>
+                                <td class="pt-3-half" contenteditable="true">Guerra Cortez</td>
+                                <td class="pt-3-half" contenteditable="true">45</td>
+                                <td class="pt-3-half" contenteditable="true">Insectus</td>
+                                <td class="pt-3-half" contenteditable="true">USA</td>
+                                <td class="pt-3-half" contenteditable="true">San Francisco</td>
+                                <td class="pt-3-half" contenteditable="true">2</td>
+                                <td class="pt-3-half">
+                                    <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a></span>
+                                    <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down" aria-hidden="true"></i></a></span>
+                                </td>
+                                <td>
+                                    <span class="table-remove"><button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                                </td>
+                            </tr>
+                            <!-- This is our clonable table line -->
+                            <tr>
+                                <td class="pt-3-half" contenteditable="true">Guadalupe House</td>
+                                <td class="pt-3-half" contenteditable="true">26</td>
+                                <td class="pt-3-half" contenteditable="true">Isotronic</td>
+                                <td class="pt-3-half" contenteditable="true">Germany</td>
+                                <td class="pt-3-half" contenteditable="true">Frankfurt am Main</td>
+                                <td class="pt-3-half" contenteditable="true">3</td>
+                                <td class="pt-3-half">
+                                    <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a></span>
+                                    <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down" aria-hidden="true"></i></a></span>
+                                </td>
+                                <td>
+                                    <span class="table-remove"><button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                                </td>
+                            </tr>
+                            <!-- This is our clonable table line -->
+                            <tr class="hide">
+                                <td class="pt-3-half" contenteditable="true">Elisa Gallagher</td>
+                                <td class="pt-3-half" contenteditable="true">31</td>
+                                <td class="pt-3-half" contenteditable="true">Portica</td>
+                                <td class="pt-3-half" contenteditable="true">United Kingdom</td>
+                                <td class="pt-3-half" contenteditable="true">London</td>
+                                <td class="pt-3-half" contenteditable="true">4</td>
+                                <td class="pt-3-half">
+                                    <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a></span>
+                                    <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down" aria-hidden="true"></i></a></span>
+                                </td>
+                                <td>
+                                    <span class="table-remove"><button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- Editable table -->
+            
+            
+            
+            
+
+        </div>
+    </main>
+    <footer class="page-footer font-small cyan darken-3 ">
+        <div class="container my-p-side-bar">
+            <div class="row">
+                <div class="col-md-12 py-4">
+                    <div class="flex-center">
+                        <a class="yt-ic">
+                            <i class="fab fa-youtube fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                        </a>
+                        <a class="teleg-ic">
+                            <i class="fab fa-telegram fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-2 my-p-side-bar">&copy; 2019 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/">EasyPython</a>
+        </div>
+    </footer>
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        var $TABLE = $('#table');
+        var $BTN = $('#export-btn');
+        var $EXPORT = $('#export');
+
+        $('.table-add').click(function() {
+            var $clone = $TABLE.find('tr.hide').clone(true).removeClass('hide table-line');
+            $TABLE.find('table').append($clone);
+        });
+
+        $('.table-remove').click(function() {
+            $(this).parents('tr').detach();
+        });
+
+        $('.table-up').click(function() {
+            var $row = $(this).parents('tr');
+            if ($row.index() === 1) return; // Don't go above the header
+            $row.prev().before($row.get(0));
+        });
+
+        $('.table-down').click(function() {
+            var $row = $(this).parents('tr');
+            $row.next().after($row.get(0));
+        });
+
+        // A few jQuery helpers for exporting only
+        jQuery.fn.pop = [].pop;
+        jQuery.fn.shift = [].shift;
+
+        $BTN.click(function() {
+            var $rows = $TABLE.find('tr:not(:hidden)');
+            var headers = [];
+            var data = [];
+
+            // Get the headers (add special header logic here)
+            $($rows.shift()).find('th:not(:empty)').each(function() {
+                headers.push($(this).text().toLowerCase());
+            });
+
+            // Turn all existing rows into a loopable array
+            $rows.each(function() {
+                var $td = $(this).find('td');
+                var h = {};
+
+                // Use the headers from earlier to name our hash keys
+                headers.forEach(function(header, i) {
+                    h[header] = $td.eq(i).text();
+                });
+
+                data.push(h);
+            });
+
+            // Output the result
+            $EXPORT.text(JSON.stringify(data));
+        });
+    </script>
+</body>
+
+</html>

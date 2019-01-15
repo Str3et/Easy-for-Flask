@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>EasyPython</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="bg">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light scroling-navbar">
+            <div class="container-fluid">
+                <a href="/home.html" class="logo-wrapper waves-effect ep-size-logo">
+                    <img src="/img/svg/logo.svg" alt="python" class="container">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Togglenavigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ep-collapse-menu" id="navbarContent">
+                    <form class="form-inline mr-auto ml-auto justify-content-center ep-pb-10">
+                        <input class="form-control mr-sm-2 mb-2 mt-2" type="text" placeholder="Search" aria-label="Search">
+                        <button class="btn aqua-gradient btn-rounded btn-sm my-0 mb-2 mt-2" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                    <div class="btn-group">
+                        <button class="btn aqua-gradient btn-rounded ep-lk-size" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far fa-user-circle fa-2x text-center">
+                                <strong class="ml-2 ep-login">Str3et</strong></i>
+                        </button>
+                        <div class="dropdown-menu text-center ep-drop-menu-login" aria-labelledby="dropdownMenu">
+                            <a class="dropdown-item" href="#">Личный кабинет</a>
+                            <a class="dropdown-item" href="reg.html">Регистрация</a>
+                            <a class="dropdown-item" href="admin.html">Администрация</a>
+                        </div>
+                    </div>
+                    <div class="ep-nav container-fluid mt-3">
+                        <div class="list-group list-group-flush">
+                            <a href="home.html" class="list-group-item waves-effect text-center">
+                                <i class="fas fa-home fa-2x"></i><br>Главная
+                            </a>
+                            <a href="event.html" class="list-group-item waves-effect text-center">
+                                <i class="far fa-calendar-alt fa-2x"></i><br>События
+                            </a>
+                            <a href="vote.html" class="list-group-item waves-effect text-center">
+                                <i class="fas fa-poll fa-2x"></i><br>Опросы
+                            </a>
+                            <a href="news.html" class="list-group-item waves-effect text-center">
+                                <i class="far fa-newspaper fa-2x"></i><br>Новости
+                            </a>
+                            <a href="contact.html" class="list-group-item waves-effect active text-center">
+                                <i class="fas fa-phone fa-2x"></i><br>Контакты
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <aside class="sidebar-fixed position-fixed">
+        <div class="list-group list-group-flush ep-sidebar-text">
+            <a href="home.html" class="ep-group-item list-group-item waves-effect text-center">
+                <i class="fas fa-home fa-2x"></i><br>Главная
+            </a>
+            <a href="event.html" class="ep-group-item list-group-item waves-effect text-center">
+                <i class="far fa-calendar-alt fa-2x"></i><br>События
+            </a>
+            <a href="vote.html" class="ep-group-item list-group-item waves-effect text-center">
+                <i class="fas fa-poll fa-2x"></i><br>Опросы
+            </a>
+            <a href="news.html" class="ep-group-item list-group-item waves-effect text-center">
+                <i class="far fa-newspaper fa-2x"></i><br>Новости
+            </a>
+            <a href="contact.html" class="ep-group-item list-group-item waves-effect active text-center">
+                <i class="fas fa-phone fa-2x"></i><br>Контакты
+            </a>
+        </div>
+    </aside>
+    <main class="max-lg-5 flex-grow-1 my-p-side-bar">
+        <div class="d-flex justify-content-around flex-wrap my-4 mr-3">
+            <section class="card mb-4 wow fadeInDown col-md-11">
+                <h2 class="h1-responsive font-weight-bold text-center my-4">Обратная связь</h2>
+                <p class="text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus culpa totam amet qui ipsa id nobis laborum voluptatem, cumque accusantium. Ab aliquid porro id assumenda.</p>
+                <div class="row card-body text-primary">
+                    <div class="col-md-9 mb-md-0 mb-5">
+                        <form id="contact-form" name="contact-form" method="post" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="name" name="name" class="form-control">
+                                        <label for="name" class="">Ваше имя</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="email" name="email" class="form-control">
+                                        <label for="email" class="">Ваш email</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="subject" name="subject" class="form-control">
+                                        <label for="subject" class="">Тема обращения</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <div class="md-form">
+                                        <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                        <label for="message">Ваше обращение</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </form>
+                        <div class="text-center text-md-left">
+                            <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Отправить</a>
+                        </div>
+                        <div class="status"></div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <ul class="list-unstyled mb-0">
+                            <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                                <p>Moscow, ahalai mahalai, Russia</p>
+                            </li>
+                            <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                                <p>+ 01 234 567 89</p>
+                            </li>
+                            <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                                <p>contact@easypython.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="page-footer font-small cyan darken-3 ">
+        <div class="container my-p-side-bar">
+            <div class="row">
+                <div class="col-md-12 py-4">
+                    <div class="flex-center">
+                        <a class="yt-ic">
+                            <i class="fab fa-youtube fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                        </a>
+                        <a class="teleg-ic">
+                            <i class="fab fa-telegram fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-2 my-p-side-bar">&copy; 2019 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/">EasyPython</a>
+        </div>
+    </footer>
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

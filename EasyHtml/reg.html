@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Registration</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- EasyPytgon styles -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="bg">
+    <main class="d-flex flex-column align-items-center mine flex-grow-1" style="min-height: 1150px;">
+        <div class="container mx-auto mb-1 mt-4" style="width: 150px;">
+            <a href="/home.html" class="logo-wrapper waves-effect">
+                <img src="/img/svg/logo.svg" alt="" class="img-fluid">
+            </a>
+        </div>
+        <h2 class="text-center mt-3 mb-3">Join our community!</h2>
+        <form class="my-sign text-center border border-light p-5 wow fadeIn" method="post" enctype="multipart/form-data">
+            <p class="h4 mb-4">Регистрация</p>
+            <div class="form-row mb-4">
+                <div class="col">
+                    <input type="text" required id="defaultRegisterFormFirstName" name="name" class="form-control" placeholder="Имя">
+                </div>
+                <div class="col">
+                    <input type="text" required id="defaultRegisterFormLastName" name="lastName" class="form-control" placeholder="Фамилия">
+                </div>
+            </div>
+            <input type="text" required id="defaultRegisterFormDate" name="date" class="form-control mb-4" placeholder="Дата рождения" onfocus="(this.type='date')" />
+            <input type="text" required id="defaultRegisterFormNick" name="nick" class="form-control mb-4" placeholder="Псевдоним">
+            <input type="City" required id="defaultRegisterFormCity" name="city" class="form-control mb-4" placeholder="Город проживания">
+            <select class="browser-default custom-select form-control mb-4" name="education" required>
+                <option disabled selected>Где учились программировать</option>
+                <option value="1">GeekBrains</option>
+                <option value="2">LearnPython</option>
+                <option value="3">Другое</option>
+            </select>
+            <input type="text" required id="defaultRegisterFormTelegram" name="telega" class="form-control mb-4" placeholder="Telegram">
+            <input type="email" required id="defaultRegisterFormEmail" name="email" class="form-control mb-4" placeholder="E-mail">
+            <input type="password" required pattern="(?=.*\d)(?=.*[a-zA-Z]).{6,}" id="defaultRegisterFormPassword" name="passw" class="form-control" placeholder="Password" aria-describedby="RegisterFormPasswordHelpBlock">
+            <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4 mt-2">
+                Пароль должен состоять из 6 знаков.<br>Содержать латинские буквы и минимум одну цифру.
+            </small>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
+                <label class="custom-control-label" for="defaultRegisterFormNewsletter">Согласие на получение рассылки</label>
+            </div>
+            <button class="btn btn-info my-4 btn-block aqua-gradient" type="submit">Зарегистрироваться</button>
+        </form>
+    </main>
+    <footer class="page-footer font-small cyan darken-3 ">
+        <div class="container my-p-side-bar">
+            <div class="row">
+                <div class="col-md-12 py-4">
+                    <div class="flex-center">
+                        <a class="yt-ic">
+                            <i class="fab fa-youtube fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                        </a>
+                        <a class="teleg-ic">
+                            <i class="fab fa-telegram fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-2 my-p-side-bar">&copy; 2019 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/">EasyPython</a>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

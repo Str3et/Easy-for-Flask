@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>EasyPython</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="bg">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light scroling-navbar">
+            <div class="container-fluid">
+                <a href="/home.html" class="logo-wrapper waves-effect ep-size-logo">
+                    <img src="/img/svg/logo.svg" alt="python" class="container">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Togglenavigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ep-collapse-menu" id="navbarContent">
+                    <form class="form-inline mr-auto ml-auto justify-content-center ep-pb-10">
+                        <input class="form-control mr-sm-2 mb-2 mt-2" type="text" placeholder="Search" aria-label="Search">
+                        <button class="btn aqua-gradient btn-rounded btn-sm my-0 mb-2 mt-2" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                    <div class="btn-group">
+                        <button class="btn aqua-gradient btn-rounded ep-lk-size" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far fa-user-circle fa-2x text-center">
+                                <strong class="ml-2 ep-login">Str3et</strong></i>
+                        </button>
+                        <div class="dropdown-menu text-center ep-drop-menu-login" aria-labelledby="dropdownMenu">
+                            <a class="dropdown-item" href="#">Личный кабинет</a>
+                            <a class="dropdown-item" href="reg.html">Регистрация</a>
+                            <a class="dropdown-item" href="admin.html">Администрация</a>
+                        </div>
+                    </div>
+                    <div class="ep-nav container-fluid mt-3">
+                        <div class="list-group list-group-flush">
+                            <a href="home.html" class="list-group-item waves-effect text-center">
+                                <i class="fas fa-home fa-2x"></i><br>Главная
+                            </a>
+                            <a href="event.html" class="list-group-item waves-effect text-center">
+                                <i class="far fa-calendar-alt fa-2x"></i><br>События
+                            </a>
+                            <a href="vote.html" class="list-group-item waves-effect active text-center">
+                                <i class="fas fa-poll fa-2x"></i><br>Опросы
+                            </a>
+                            <a href="news.html" class="list-group-item waves-effect text-center">
+                                <i class="far fa-newspaper fa-2x"></i><br>Новости
+                            </a>
+                            <a href="contact.html" class="list-group-item waves-effect text-center">
+                                <i class="fas fa-phone fa-2x"></i><br>Контакты
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <aside class="sidebar-fixed position-fixed">
+        <div class="list-group list-group-flush ep-sidebar-text">
+            <a href="home.html" class="ep-group-item list-group-item waves-effect text-center">
+                <i class="fas fa-home fa-2x"></i><br>Главная
+            </a>
+            <a href="event.html" class="ep-group-item list-group-item waves-effect text-center">
+                <i class="far fa-calendar-alt fa-2x"></i><br>События
+            </a>
+            <a href="vote.html" class="ep-group-item list-group-item waves-effect active text-center">
+                <i class="fas fa-poll fa-2x"></i><br>Опросы
+            </a>
+            <a href="news.html" class="ep-group-item list-group-item waves-effect text-center">
+                <i class="far fa-newspaper fa-2x"></i><br>Новости
+            </a>
+            <a href="contact.html" class="ep-group-item list-group-item waves-effect text-center">
+                <i class="fas fa-phone fa-2x"></i><br>Контакты
+            </a>
+        </div>
+    </aside>
+    <main class="max-lg-5 flex-grow-1 my-p-side-bar">
+
+        <h2 class="font-weight-bold text-center my-3 mx-5 text-primary">Обратная связь очень важна для молодого сообщества. Только с Вашей помощью мы сможем совершенствоваться быстрее, а главное в нужном направлении. Спасибо за проявленный интерес!</h2>
+        <div class="d-flex justify-content-around flex-wrap mt-4 mb-4">
+
+            <article class="card col-md-3 ep-card-m d-flex wow fadeInLeft">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <h4 class="card-title text-center">Нам важно Ваше мнение.</h4>
+                    <p class="card-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eos, eligendi nihil recusandae!</p>
+
+                    <form class="d-flex flex-column justify-content-between mb-3" method="post" enctype="multipart/form-data">
+                        <div class="custom-control custom-radio mb-2 mt-2">
+                            <input type="radio" class="custom-control-input" value="opti1" id="defaultUnchecke1" name="choice">
+                            <label class="custom-control-label" for="defaultUnchecke1">Нам</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-2">
+                            <input type="radio" class="custom-control-input" value="opti2" id="defaultUnchecke2" name="choice">
+                            <label class="custom-control-label" for="defaultUnchecke2">Важно</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-2">
+                            <input type="radio" class="custom-control-input" value="opti3" id="defaultUnchecke3" name="choice">
+                            <label class="custom-control-label" for="defaultUnchecke3">Ваше</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-3">
+                            <input type="radio" class="custom-control-input" value="opti4" id="defaultUnchecke4" name="choice">
+                            <label class="custom-control-label" for="defaultUnchecke4">Мнение</label>
+                        </div>
+                        <button class="btn aqua-gradient" type="submit">Голосовать</button>
+                    </form>
+                </div>
+            </article>
+
+            <article class="d-flex justify-content-around flex-wrap mt-4 mb-4 card col-md-5">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <h4 class="card-title text-center">Нам важно Ваше мнение. Это главный опрос на странице.</h4>
+                    <p class="card-text mb-3 text-center">По итогам последнего МитАпа у нас много вопросов. Помоги нам стать лучше.</p>
+                    <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header text-center">
+                                    <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body mx-3">
+                                    <p class="card-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eos, eligendi nihil recusandae!</p>
+                                    <form class="d-flex flex-column justify-content-between mb-3" method="post" enctype="multipart/form-data">
+                                        <div class="custom-control custom-radio mb-2 mt-2">
+                                            <input type="radio" class="custom-control-input" value="option1" id="defaultUnchecked1" name="choice">
+                                            <label class="custom-control-label" for="defaultUnchecked1">Нам</label>
+                                        </div>
+                                        <div class="custom-control custom-radio mb-2">
+                                            <input type="radio" class="custom-control-input" value="option2" id="defaultUnchecked2" name="choice">
+                                            <label class="custom-control-label" for="defaultUnchecked2">Важно</label>
+                                        </div>
+                                        <div class="custom-control custom-radio mb-2">
+                                            <input type="radio" class="custom-control-input" value="option3" id="defaultUnchecked3" name="choice">
+                                            <label class="custom-control-label" for="defaultUnchecked3">Ваше</label>
+                                        </div>
+                                        <div class="custom-control custom-radio mb-3">
+                                            <input type="radio" class="custom-control-input" value="option4" id="defaultUnchecked4" name="choice">
+                                            <label class="custom-control-label" for="defaultUnchecked4">Мнение</label>
+                                        </div>
+                                        <button class="btn aqua-gradient" type="submit">Голосовать</button>
+                                    </form>
+                                    <p class="card-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eos, eligendi nihil recusandae!</p>
+                                    <form class="d-flex flex-column justify-content-between mb-3" method="post" enctype="multipart/form-data">
+                                        <div class="custom-control custom-radio mb-2 mt-2">
+                                            <input type="radio" class="custom-control-input" value="option5" id="defaultUnchecked5" name="choice">
+                                            <label class="custom-control-label" for="defaultUnchecked5">Нам</label>
+                                        </div>
+                                        <div class="custom-control custom-radio mb-2">
+                                            <input type="radio" class="custom-control-input" value="option6" id="defaultUnchecked6" name="choice">
+                                            <label class="custom-control-label" for="defaultUnchecked6">Важно</label>
+                                        </div>
+                                        <div class="custom-control custom-radio mb-2">
+                                            <input type="radio" class="custom-control-input" value="option7" id="defaultUnchecked7" name="choice">
+                                            <label class="custom-control-label" for="defaultUnchecked7">Ваше</label>
+                                        </div>
+                                        <div class="custom-control custom-radio mb-3">
+                                            <input type="radio" class="custom-control-input" value="option8" id="defaultUnchecked8" name="choice">
+                                            <label class="custom-control-label" for="defaultUnchecked8">Мнение</label>
+                                        </div>
+                                        <button class="btn aqua-gradient" type="submit">Голосовать</button>
+                                    </form>
+                                    <p class="card-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eos, eligendi nihil recusandae!</p>
+                                    <form class="d-flex flex-column justify-content-between mb-3" method="post" enctype="multipart/form-data">
+                                        <div class="custom-control custom-radio mb-2 mt-2">
+                                            <input type="radio" class="custom-control-input" value="option9" id="defaultUnchecked9" name="choice">
+                                            <label class="custom-control-label" for="defaultUnchecked9">Нам</label>
+                                        </div>
+                                        <div class="custom-control custom-radio mb-2">
+                                            <input type="radio" class="custom-control-input" value="option10" id="defaultUnchecked10" name="choice">
+                                            <label class="custom-control-label" for="defaultUnchecked10">Важно</label>
+                                        </div>
+                                        <div class="custom-control custom-radio mb-3">
+                                            <input type="radio" class="custom-control-input" value="option11" id="defaultUnchecked11" name="choice">
+                                            <label class="custom-control-label" for="defaultUnchecked11">Мнение</label>
+                                        </div>
+                                        <button class="btn aqua-gradient" type="submit">Голосовать</button>
+                                    </form>
+                                    <p class="card-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eos, eligendi nihil recusandae!</p>
+                                    <form class="d-flex flex-column justify-content-between mb-3" method="post" enctype="multipart/form-data">
+                                        <div class="custom-control custom-radio mb-2 mt-2">
+                                            <input type="radio" class="custom-control-input" value="option12" id="defaultUnchecked12" name="choice">
+                                            <label class="custom-control-label" for="defaultUnchecked12">Нам</label>
+                                        </div>
+                                        <div class="custom-control custom-radio mb-2">
+                                            <input type="radio" class="custom-control-input" value="option13" id="defaultUnchecked13" name="choice">
+                                            <label class="custom-control-label" for="defaultUnchecked13">Важно</label>
+                                        </div>
+                                        <button class="btn aqua-gradient" type="submit">Голосовать</button>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <a href="" class="btn btn-default aqua-gradient btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm">Пройти опрос</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card col-md-3 ep-card-m d-flex wow fadeInRight">
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <h4 class="card-title text-center">Нам важно Ваше мнение.</h4>
+                    <p class="card-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eos, eligendi nihil recusandae!</p>
+
+                    <form class="d-flex flex-column justify-content-between mb-3" method="post" enctype="multipart/form-data">
+                        <div class="custom-control custom-radio mb-2 mt-2">
+                            <input type="radio" class="custom-control-input" value="optio1" id="defaultUncheckedd1" name="choice">
+                            <label class="custom-control-label" for="defaultUncheckedd1">Нам</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-2">
+                            <input type="radio" class="custom-control-input" value="optio2" id="defaultUncheckedd2" name="choice">
+                            <label class="custom-control-label" for="defaultUncheckedd2">Важно</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-2">
+                            <input type="radio" class="custom-control-input" value="optio3" id="defaultUncheckedd3" name="choice">
+                            <label class="custom-control-label" for="defaultUncheckedd3">Ваше</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-3">
+                            <input type="radio" class="custom-control-input" value="optio4" id="defaultUncheckedd4" name="choice">
+                            <label class="custom-control-label" for="defaultUncheckedd4">Мнение</label>
+                        </div>
+                        <button class="btn aqua-gradient" type="submit">Голосовать</button>
+                    </form>
+                </div>
+            </article>
+
+        </div>
+    </main>
+    <footer class="page-footer font-small cyan darken-3 ">
+        <div class="container my-p-side-bar">
+            <div class="row">
+                <div class="col-md-12 py-4">
+                    <div class="flex-center">
+                        <a class="yt-ic">
+                            <i class="fab fa-youtube fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                        </a>
+                        <a class="teleg-ic">
+                            <i class="fab fa-telegram fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-2 my-p-side-bar">&copy; 2019 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/">EasyPython</a>
+        </div>
+    </footer>
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

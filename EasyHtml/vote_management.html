@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>EasyPython</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="bg">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light scroling-navbar">
+            <div class="container-fluid">
+                <a href="home.html" class="logo-wrapper waves-effect ep-size-logo">
+                    <img src="/img/svg/logo.svg" alt="python" class="container">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Togglenavigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ep-collapse-menu" id="navbarContent">
+                    <form class="form-inline mr-auto ml-auto justify-content-center ep-pb-10" method="post" enctype="multipart/form-data">
+                        <input class="form-control mr-sm-2 mb-2 mt-2" type="text" placeholder="Search" aria-label="Search">
+                        <button class="btn aqua-gradient btn-rounded btn-sm my-0 mb-2 mt-2" type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                    <div class="btn-group">
+                        <button class="btn aqua-gradient btn-rounded ep-lk-size" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far fa-user-circle fa-2x text-center">
+                                <strong class="ml-2 ep-login">Str3et</strong></i>
+                        </button>
+                        <div class="dropdown-menu text-center ep-drop-menu-login" aria-labelledby="dropdownMenu">
+                            <a class="dropdown-item" href="#">Личный кабинет</a>
+                            <a class="dropdown-item" href="reg.html">Регистрация</a>
+                            <a class="dropdown-item" href="admin.html">Администрация</a>
+                        </div>
+                    </div>
+                    <div class="ep-nav container-fluid mt-3">
+                        <div class="list-group list-group-flush">
+                            <a href="admin.html" class="ep-group-item list-group-item waves-effect text-center">
+                                <i class="fas fa-home fa-2x"></i><br>Dashboard
+                            </a>
+                            <a href="news_management.html" class="ep-group-item list-group-item waves-effect text-center">
+                                <i class="far fa-newspaper fa-2x"></i><br>Управление новостями
+                            </a>
+                            <a href="vote_management.html" class="ep-group-item list-group-item waves-effect active text-center">
+                                <i class="fas fa-poll fa-2x"></i><br>Управление опросами
+                            </a>
+                            <a href="event_management.html" class="ep-group-item list-group-item waves-effect text-center">
+                                <i class="far fa-calendar-alt fa-2x"></i><br>Управление событиями
+                            </a>
+                            <a href="contact_management.html" class="ep-group-item list-group-item waves-effect text-center">
+                                <i class="fab fa-rocketchat fa-2x"></i><br>Управление обратной связью
+                            </a>
+                            <a href="user_management.html" class="ep-group-item list-group-item waves-effect text-center">
+                                <i class="fas fa-users-cog fa-2x"></i><br>Управление user`ами
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <aside class="sidebar-fixed position-fixed">
+        <div class="list-group list-group-flush ep-sidebar-text mb-5">
+            <a href="admin.html" class="ep-group-item list-group-item waves-effect text-center">
+                <i class="fas fa-home fa-2x"></i><br>Dashboard
+            </a>
+            <a href="news_management.html" class="ep-group-item list-group-item waves-effect text-center">
+                <i class="far fa-newspaper fa-2x"></i><br>Управление новостями
+            </a>
+            <a href="vote_management.html" class="ep-group-item list-group-item waves-effect active text-center">
+                <i class="fas fa-poll fa-2x"></i><br>Управление опросами
+            </a>
+            <a href="event_management.html" class="ep-group-item list-group-item waves-effect text-center">
+                <i class="far fa-calendar-alt fa-2x"></i><br>Управление событиями
+            </a>
+            <a href="contact_management.html" class="ep-group-item list-group-item waves-effect text-center">
+                <i class="fab fa-rocketchat fa-2x"></i><br>Управление обратной связью
+            </a>
+            <a href="user_management.html" class="ep-group-item list-group-item waves-effect text-center">
+                <i class="fas fa-users-cog fa-2x"></i><br>Управление user`ами
+            </a>
+        </div>
+    </aside>
+    <main class="max-lg-5 flex-grow-1 my-p-side-bar">
+        <article class="d-flex justify-content-around flex-wrap mt-4 mb-4 mr-3">
+
+            <section class="card mb-3" id="content-tab1">
+                <div class="card-body">
+                    <div class="table-wrapper-scroll-y">
+                        <h3 class="text-center">Голосования</h3>
+                        <div class='table-responsive'>
+                            <table id="tablePreview" class="table table-striped table-hover">
+                                <thead class="text-center">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Название</th>
+                                        <th>Текст голосования</th>
+                                        <th>Варианты ответов</th>
+                                        <th>Результаты</th>
+                                        <th>Изменить</th>
+                                        <th>Удалить</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-center">
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Итоги МитаАпа</td>
+                                        <td>Сделаем выводыСделаем выводыСделаем выводыСделаем выводыСделаем выводыСделаем выводыСделаем выводыСделаем выводыСделаем выводы</td>
+                                        <td>@mdo</td>
+                                        <td>
+                                            <a href="#" class="badge badge-secondary p-2"><i class="fas fa-chart-bar"></i></a>
+                                        </td>
+
+                                        <td>
+                                            <a href="#" class="badge badge-success p-2"><i class="fas fa-cog"></i></a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="badge badge-danger p-2"><i class="fas fa-cross"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                        <td>
+                                            <a href="#" class="badge badge-secondary p-2"><i class="fas fa-chart-bar"></i></a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="badge badge-success p-2"><i class="fas fa-cog"></i></a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="badge badge-danger p-2"><i class="fas fa-cross"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                        <td>@twitter</td>
+                                        <td>
+                                            <a href="#" class="badge badge-secondary p-2"><i class="fas fa-chart-bar"></i></a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="badge badge-success p-2"><i class="fas fa-cog"></i></a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="badge badge-danger p-2"><i class="fas fa-cross"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header text-center">
+                                <h4 class="modal-title w-100 font-weight-bold">Голосование</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body mx-3">
+                                <div class="md-form mb-5">
+                                    <input type="text" id="form34" class="form-control validate">
+                                    <label data-error="wrong" data-success="right" for="form34">Название голосования</label>
+                                </div>
+                                <div class="md-form">
+                                    <textarea type="text" id="form8" class="md-textarea form-control" rows="3"></textarea>
+                                    <label data-error="wrong" data-success="right" for="form8">Текст Голосования</label>
+                                </div>
+                                <div class="md-form mb-5">
+                                    <input type="text" id="form32" class="form-control validate">
+                                    <label data-error="wrong" data-success="right" for="form32">Вариант ответа</label>
+                                </div>
+                                <div class="md-form mb-5">
+                                    <input type="text" id="form32" class="form-control validate">
+                                    <label data-error="wrong" data-success="right" for="form32">Вариант ответа</label>
+                                </div>
+                                <button class="btn success-color p-2"><i class="fas fa-plus"></i></button>
+                                
+
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center">
+                                <button class="btn btn-unique">Создать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <a href="" class="btn aqua-gradient btn-rounded" data-toggle="modal" data-target="#modalContactForm">Создать опрос</a>
+                </div>
+            </section>
+            <section>
+                <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header text-center">
+                                <h4 class="modal-title w-100 font-weight-bold">Голосование</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body mx-3">
+                                <div class="md-form mb-5">
+                                    <input type="text" id="form34" class="form-control validate">
+                                    <label data-error="wrong" data-success="right" for="form34">Название голосования</label>
+                                </div>
+                                <div class="md-form">
+                                    <textarea type="text" id="form8" class="md-textarea form-control" rows="3"></textarea>
+                                    <label data-error="wrong" data-success="right" for="form8">Текст Голосования</label>
+                                </div>
+                                <div class="md-form mb-5">
+                                    <input type="text" id="form32" class="form-control validate">
+                                    <label data-error="wrong" data-success="right" for="form32">Вариант ответа</label>
+                                </div>
+                                <div class="md-form mb-5">
+                                    <input type="text" id="form32" class="form-control validate">
+                                    <label data-error="wrong" data-success="right" for="form32">Вариант ответа</label>
+                                </div>
+                                <button class="btn success-color p-2"><i class="fas fa-plus"></i></button>
+                                
+
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center">
+                                <button class="btn btn-unique">Создать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <a href="" class="btn aqua-gradient btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm">Создать опрос</a>
+                </div>
+            </section>
+
+
+        </article>
+    </main>
+    <footer class="page-footer font-small cyan darken-3 ">
+        <div class="container my-p-side-bar">
+            <div class="row">
+                <div class="col-md-12 py-4">
+                    <div class="flex-center">
+                        <a class="yt-ic">
+                            <i class="fab fa-youtube fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                        </a>
+                        <a class="teleg-ic">
+                            <i class="fab fa-telegram fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-2 my-p-side-bar">&copy; 2019 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/">EasyPython</a>
+        </div>
+    </footer>
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
